@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Mancala.Domain.Game" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Player1" Type="Mancala.Domain.Player" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.625" Y="1.062" />
+        <Point X="2.625" Y="1.406" />
+        <Point X="2.625" Y="1.406" />
+        <Point X="2.625" Y="1.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Player2" Type="Mancala.Domain.Player" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.688" Y="1.062" />
+        <Point X="3.688" Y="1.137" />
+        <Point X="3.688" Y="1.137" />
+        <Point X="3.688" Y="1.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AIIAAAAASBAAAFAAwAAEAEAAAACAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Player1" />
+      <Property Name="Player2" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Mancala.Domain.GameAlreadyStartedException" Collapsed="true">
+    <Position X="6.25" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameAlreadyStartedException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mancala.Domain.InvalidMoveException" Collapsed="true">
+    <Position X="6.75" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InvalidMoveException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mancala.Domain.NotPlayersTurnException" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NotPlayersTurnException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mancala.Domain.Pit" Collapsed="true">
+    <Position X="3.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mancala.Domain.SeedContainer" Collapsed="true">
+    <Position X="2.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>SeedContainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mancala.Domain.Store" Collapsed="true">
+    <Position X="1.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Store.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mancala.Domain.Player" Collapsed="true">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <AssociationLine Name="Store" Type="Mancala.Domain.Store" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.5" Y="2" />
+        <Point X="2" Y="2" />
+        <Point X="2" Y="3" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Pits" Type="Mancala.Domain.Pit" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4" Y="2.063" />
+        <Point X="4.562" Y="2.063" />
+        <Point X="4.562" Y="3" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAQAAJAAAAAAAABAAEAAAAAAAAQAwAAA=</HashCode>
+      <FileName>Player.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Store" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Pits" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
